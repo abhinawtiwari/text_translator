@@ -22,7 +22,7 @@ def detect_and_translate(text,target_lang):
         print('translate_count: ', translate_count)
         return translate_text 
 
-data = pd.read_csv('../reviews.csv')
+data = pd.read_csv('./reviews.csv')
 data.fillna('none', inplace=True)
 
 for index, row in data['comments'].iteritems():
